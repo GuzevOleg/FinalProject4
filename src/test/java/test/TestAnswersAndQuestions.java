@@ -21,7 +21,7 @@ public class TestAnswersAndQuestions extends BaseSeleniumTest {
     @Test
     public void checkQuestionTest() {
         PageYaScooter pageYaScooter = new PageYaScooter();
-        Assert.assertEquals("Ответы не совпали", expected, pageYaScooter.getAnswer(numberQuestions));
+        Assert.assertEquals("Ответы не совпали", expected, pageYaScooter.getQuestion(numberQuestions));
     }
 
 

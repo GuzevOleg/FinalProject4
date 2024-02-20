@@ -51,9 +51,10 @@ public class PageYaScooter extends BaseSeleniumPage {
     }
 
 
-    public String getAnswer(int question) {
+    public String getQuestion(int question) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", questions);
         listQuestions.get(question).click();
+        questions.isDisplayed();
         return listAnswers.get(question).getText();
     }
 
